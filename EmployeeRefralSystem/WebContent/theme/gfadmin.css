@@ -1,0 +1,684 @@
+BODY {
+	MARGIN: 0px;
+	COLOR: black;
+	FONT-SIZE: 8pt;
+	FONT-FAMILY: MS Sans Serif, Courier, Arial;
+	BACKGROUND-COLOR: WHITE;
+}
+
+INPUT {
+	FONT-SIZE: 8pt;
+	FONT-FAMILY: MS Sans Serif, Courier, Arial;
+}
+
+HR {
+	COLOR: steelblue;
+}
+
+FORM {
+	MARGIN: 0px;
+}
+
+THEAD {
+	DISPLAY: table-header-group;
+}
+
+TFOOT {
+	DISPLAY: table-footer-group;
+}
+
+.cTitle {
+	BORDER-RIGHT: whitesmoke 1px ridge;
+	BORDER-TOP: whitesmoke 1px ridge;
+	FONT-WEIGHT: bold;
+	FONT-SIZE: 8pt;
+	BORDER-LEFT: whitesmoke 1px ridge;
+	COLOR: darkblue; /* white */
+	BORDER-BOTTOM: whitesmoke 1px ridge;
+	FONT-FAMILY: MS Sans Serif, Courier, Arial;
+	BACKGROUND-COLOR: #ECF2F2;  /*#610B0B */
+	TEXT-DECORATION: none;
+}
+
+.cTitlevp {
+	BORDER-RIGHT: whitesmoke 1px ridge;
+	BORDER-TOP: whitesmoke 1px ridge;
+	FONT-WEIGHT: bold;
+	FONT-SIZE: 8pt;
+	BORDER-LEFT: whitesmoke 1px ridge;
+	COLOR: white;
+	BORDER-BOTTOM: whitesmoke 1px ridge;
+	FONT-FAMILY: MS Sans Serif, Courier, Arial;
+	BACKGROUND-COLOR: #3f8f4a;
+	TEXT-DECORATION: none;
+}
+
+.cInputForm {
+	BORDER-RIGHT: steelblue 1px solid;
+	BORDER-TOP: steelblue 1px solid;
+	BORDER-LEFT: steelblue 1px solid;
+	BORDER-BOTTOM: steelblue 1px solid;
+	BACKGROUND-COLOR: #97B1CD;
+	FONT-FAMILY: MS Sans Serif, Courier, Arial;
+	FONT-SIZE: 8pt;
+	TEXT-DECORATION: none;
+}
+
+.cInputFormvp {
+	BORDER-RIGHT: steelblue 1px solid;
+	BORDER-TOP: steelblue 1px solid;
+	BORDER-LEFT: steelblue 1px solid;
+	BORDER-BOTTOM: steelblue 1px solid;
+	BACKGROUND-COLOR: #a9cb9a;
+	FONT-FAMILY: MS Sans Serif, Courier, Arial;
+	FONT-SIZE: 8pt;
+	TEXT-DECORATION: none;
+}
+
+.cInput {
+	FONT-SIZE: 8pt;
+	FONT-FAMILY: MS Sans Serif, Courier, Arial;
+	BACKGROUND-COLOR: ivory;
+}
+
+.cDisabled {
+	FONT-SIZE: 8pt;
+	FONT-FAMILY: MS Sans Serif, Courier, Arial;
+	BACKGROUND-COLOR: white;
+}
+
+.cHidden {
+	display: none;
+}
+
+.cVisible {
+	display: block;
+}
+
+.cColHidden {
+	DISPLAY: none
+}
+
+.cEnabled {
+	FONT-SIZE: 8pt;
+	FONT-FAMILY: MS Sans Serif, Courier, Arial;
+	BACKGROUND-COLOR: ivory;
+}
+
+.cReadOnly {
+	FONT-SIZE: 8pt;
+	COLOR: black;
+	FONT-FAMILY: MS Sans Serif, Courier, Arial;
+	BACKGROUND-COLOR: white;
+}
+
+.cEnabledErr {
+	FONT-SIZE: 8pt;
+	FONT-FAMILY: MS Sans Serif, Courier, Arial;
+	BACKGROUND-COLOR: #ffff66;
+}
+
+.cDisabledErr {
+	FONT-SIZE: 8pt;
+	FONT-FAMILY: MS Sans Serif, Courier, Arial;
+	BACKGROUND-COLOR: #ffff66;
+}
+
+.cTextOut {
+	BORDER-RIGHT: whitesmoke 1px ridge;
+	BORDER-TOP: whitesmoke 1px ridge;
+	BORDER-LEFT: whitesmoke 1px ridge;
+	BORDER-BOTTOM: whitesmoke 1px ridge;
+	PADDING-LEFT: 2;
+	PADDING-RIGHT: 2;
+	COLOR: black;
+	FONT-SIZE: 8pt;
+	FONT-FAMILY: MS Sans Serif, Courier, Arial;
+	BACKGROUND-COLOR: ivory;
+}
+
+.cNegativeNum {
+	COLOR: red !important;
+	FONT-SIZE: 8pt;
+	FONT-FAMILY: MS Sans Serif, Courier, Arial;
+}
+
+.cNoMD {
+	font-style: italic !important;
+}
+
+.cLabel {
+	Color: BLACK;
+	FONT-SIZE: 8pt;
+	FONT-FAMILY: MS Sans Serif, Courier, Arial;
+}
+
+.cInputHelper {
+	BORDER-RIGHT: black 1px solid;
+	BORDER-TOP: black 1px solid;
+	FONT-WEIGHT: bold;
+	FONT-SIZE: 8pt;
+	BORDER-LEFT: black 1px solid;
+	COLOR: black;
+	BORDER-BOTTOM: black 1px solid;
+	FONT-FAMILY: MS Sans Serif, Courier, Arial;
+	BACKGROUND-COLOR: white
+}
+
+.cInfoText {
+	FONT-SIZE: 8pt;
+	FONT-WEIGHT: bold;
+	COLOR: WHITE;
+	BACKGROUND-COLOR: steelblue;
+	PADDING: 4PX;
+}
+
+.cButton {
+	CURSOR: pointer;
+	margin-left: 1px;
+	margin-right: 1px;
+}
+
+.cButtonNormal {
+	BACKGROUND-COLOR: lightsteelblue;
+	BORDER-TOP: whitesmoke 1px solid;
+	BORDER-LEFT: whitesmoke 1px solid;
+	BORDER-BOTTOM: black 1px solid;
+	BORDER-RIGHT: black 1px solid;
+	COLOR: black;
+	FONT-WEIGHT: bold;
+	FONT-SIZE: 8pt;
+	FONT-FAMILY: MS Sans Serif, Courier, Arial;
+	TEXT-DECORATION: none;
+	margin-left: 1px;
+	margin-right: 1px;
+}
+
+.cButtonNormal#fFDateLkUp,.cButtonNormal#fTDateLkUp {
+	BACKGROUND-COLOR: lightsteelblue;
+	BORDER-TOP: 0px;
+	BORDER-LEFT: 0px;
+	BORDER-BOTTOM: 0px;
+	BORDER-RIGHT: 0px;
+	COLOR: black;
+	FONT-WEIGHT: bold;
+	FONT-SIZE: 8pt;
+	FONT-FAMILY: MS Sans Serif, Courier, Arial;
+	TEXT-DECORATION: none;
+	margin-left: 0px;
+	margin-right: 0px;
+	margin-top: 0px;
+	margin-bottom: 0px;
+	padding-left: 0px;
+	padding-right: 0px;
+	padding-top: 0px;
+	padding-bottom: 0px;
+}
+
+.cButtonHover {
+	BACKGROUND-COLOR: steelblue;
+	BORDER-LEFT: black 1px solid;
+	BORDER-TOP: black 1px solid;
+	BORDER-BOTTOM: whitesmoke 1px solid;
+	BORDER-RIGHT: whitesmoke 1px solid;
+	COLOR: white;
+	FONT-WEIGHT: bold;
+	FONT-SIZE: 8pt;
+	CURSOR: pointer;
+	FONT-FAMILY: MS Sans Serif, Courier, Arial;
+	TEXT-DECORATION: none;
+	margin-left: 1px;
+	margin-right: 1px;
+}
+
+.cButton1 {
+	float: left;
+	display: block;
+	background: url("tabright.gif") no-repeat right left top;
+	color: #FFF;;
+	border-width: medium;
+	border-style: groove;
+}
+
+.cGrid {
+	FONT-SIZE: 10pt;
+	FONT-FAMILY: MS Sans Serif, Courier, Arial;
+	BACKGROUND-COLOR: lightsteelblue;
+	BORDER: #000099 1px solid;
+	border-collapse: collapse;
+}
+
+.cGridHdr,table.cGrid thead tr {
+	BACKGROUND-COLOR: mediumblue;
+	COLOR: white;
+	TEXT-DECORATION: none;
+}
+
+tr.cGridHdr th,table.cGrid thead tr th {
+	BORDER: #000099 1px solid;
+}
+
+.cGridRowEven,table.cGrid tbody tr {
+	BACKGROUND-COLOR: #ECF2F2; /*gainsboro */
+	TEXT-DECORATION: none;
+	cursor: default;
+}
+
+tr.cGridRowEven td,table.cGrid tbody tr td {
+	BORDER-LEFT: #000099 1px solid;
+	BORDER-RIGHT: #000099 1px solid;
+	BORDER-TOP: none;
+	BORDER-BOTTOM: none;
+}
+
+.cGridRowOdd,table.cGrid tbody tr.cGridRowOdd {
+	BACKGROUND-COLOR: white; /* lightyellow */
+	TEXT-DECORATION: none;
+	cursor: default;
+}
+
+tr.cGridRowOdd td,table.cGrid tbody tr.cGridRowOdd td {
+	BORDER-LEFT: #000099 1px solid;
+	BORDER-RIGHT: #000099 1px solid;
+	BORDER-TOP: none;
+	BORDER-BOTTOM: none;
+}
+
+.cGridHover {
+	BACKGROUND-COLOR: steelblue;
+	COLOR: white;
+	CURSOR: pointer;
+	TEXT-DECORATION: none;
+}
+
+.cGridIcon {
+	CURSOR: pointer;
+	width: 14px;
+	height: 14px;
+	margin-top: 0px;
+	margin-bottom: 0px;
+	margin-left: 4px;
+	margin-right: 4px;
+}
+
+table.cGrid a.sortheader {
+	background-color: MediumBlue;
+	color: white;
+	font-weight: bold;
+	text-decoration: none;
+	display: block;
+}
+
+table.cGrid span.sortarrow {
+	color: white;
+	FONT-WEIGHT: bold;
+	text-decoration: none;
+}
+
+.cErrorMsg {
+	COLOR: white;
+	BACKGROUND-COLOR: MAROON;
+	FONT-SIZE: 10pt;
+	TEXT-ALIGN: center;
+	FONT-WEIGHT: bold;
+	TEXT-DECORATION: none;
+}
+
+.cErrorsMsg {
+	COLOR: #FF5599;
+	BACKGROUND-COLOR: white;
+	FONT-SIZE: 10pt;
+	TEXT-ALIGN: center;
+	FONT-WEIGHT: bold;
+	TEXT-DECORATION: none;
+}
+
+.cTable {
+	BACKGROUND-COLOR: white;
+	FONT-SIZE: 8pt;
+	FONT-FAMILY: MS Sans Serif, Courier, Arial;
+}
+
+.cAppBody {
+	COLOR: black;
+	BACKGROUND-COLOR: white;
+	FONT-SIZE: 8pt;
+	FONT-FAMILY: MS Sans Serif, Courier, Arial;
+	margin-top: 0px;
+	margin-bottom: 0px;
+	margin-left: 14px;
+	margin-right: 0px;
+	padding: 0px;
+}
+
+.cAppTitle {
+	COLOR: black;
+	BACKGROUND-COLOR: white;
+	FONT-WEIGHT: bold;
+	FONT-SIZE: 12pt;
+}
+
+.cAppSumArea {
+	COLOR: white;
+	BACKGROUND-COLOR: darkblue;
+	FONT-FAMILY: MS Sans Serif, Courier, Arial;
+	FONT-WEIGHT: bold;
+	FONT-SIZE: 8pt;
+	margin-top: 2px;
+	margin-bottom: 2px;
+	padding-top: 2px;
+	padding-bottom: 2px;
+}
+
+.cAppDetailSumArea,table.cAppDetailSumTable {
+	COLOR: black;
+	BACKGROUND-COLOR: white;
+	FONT-FAMILY: MS Sans Serif, Courier, Arial;
+	FONT-WEIGHT: normal;
+	FONT-SIZE: 8pt;
+}
+
+table.cAppDetailSumTable thead tr th {
+	FONT-WEIGHT: normal;
+	FONT-SIZE: 10pt;
+	TEXT-DECORATION: underline;
+}
+
+.cAppDetailSumTitle,table.cAppDetailSumTable tbody tr th {
+	COLOR: black;
+	BACKGROUND-COLOR: white;
+	FONT-FAMILY: MS Sans Serif, Courier, Arial;
+	FONT-WEIGHT: normal;
+	FONT-SIZE: 8pt;
+}
+
+.cAppDetailSumData,table.cAppDetailSumTable tbody tr td {
+	COLOR: black;
+	BACKGROUND-COLOR: white;
+	FONT-FAMILY: MS Sans Serif, Courier, Arial;
+	FONT-SIZE: 8pt;
+	FONT-WEIGHT: bold;
+}
+
+.cDetailBody {
+	COLOR: BLACK;
+	BACKGROUND-COLOR: white;
+	FONT-SIZE: 8pt;
+	FONT-FAMILY: MS Sans Serif, Courier, Arial;
+}
+
+.cDetailTitle {
+	COLOR: darkblue;
+	TEXT-DECORATION: underline;
+	FONT-FAMILY: MS Sans Serif, Courier, Arial;
+	FONT-WEIGHT: bold;
+	FONT-SIZE: 12pt;
+}
+
+.cDetailData,table.cDetailTable tbody tr td {
+	BACKGROUND-COLOR: lightyellow;
+	COLOR: darkblue;
+	FONT-SIZE: 8pt;
+	BORDER: gray 1px solid;
+	FONT-FAMILY: MS Sans Serif, Courier, Arial;
+	padding: 2px;
+}
+
+.cDetailLbl,table.cDetailTable tbody tr th {
+	COLOR: BLACK;
+	FONT-SIZE: 8pt;
+	FONT-FAMILY: MS Sans Serif, Courier, Arial;
+}
+
+.cDataAppArea {
+	FONT-SIZE: 8pt;
+	FONT-FAMILY: MS Sans Serif, Courier, Arial;
+}
+
+.cDataAppLabel {
+	FONT-SIZE: 8pt;
+	FONT-FAMILY: MS Sans Serif, Courier, Arial;
+}
+
+.cDataAppData {
+	FONT-SIZE: 8pt;
+	FONT-FAMILY: MS Sans Serif, Courier, Arial;
+}
+
+.cLkuBody {
+	COLOR: BLACK;
+	BACKGROUND-COLOR: gainsboro;
+	FONT-SIZE: 8pt;
+	FONT-FAMILY: MS Sans Serif, Courier, Arial;
+	margin-top: 0px;
+	margin-bottom: 0px;
+	margin-left: 14px;
+	margin-right: 14px;
+}
+
+.cLkuInput {
+	COLOR: BLACK;
+	BACKGROUND-COLOR: ivory;
+	BORDER: gray 1px solid;
+	FONT-SIZE: 8pt;
+	FONT-FAMILY: MS Sans Serif, Courier, Arial;
+}
+
+.cLkuLbl {
+	COLOR: black;
+	FONT-SIZE: 8pt;
+	FONT-WEIGHT: bold;
+	FONT-FAMILY: MS Sans Serif, Courier, Arial;
+}
+
+.cOptionExists {
+	background-color: #8489bd
+}
+
+.cHelpHeader {
+	COLOR: black;
+	BACKGROUND-COLOR: white;
+	FONT-FAMILY: MS Sans Serif, Courier, Arial;
+	FONT-WEIGHT: bold;
+	FONT-SIZE: 8pt;
+}
+
+.cHelpText {
+	COLOR: black;
+	BACKGROUND-COLOR: white;
+	FONT-FAMILY: MS Sans Serif, Courier, Arial;
+	FONT-SIZE: 8pt;
+}
+
+.cPagingArea {
+	FONT-SIZE: 8pt;
+	FONT-WEIGHT: bold;
+	COLOR: WHITE;
+	BACKGROUND-COLOR: steelblue;
+	PADDING: 4PX;
+}
+
+div.tab {
+	background-color: lightgrey;
+	color: black;
+	cursor: pointer;
+	font-weight: normal;
+	text-align: center;
+	border-top: 1px solid black;
+	border-left: 1px solid black;
+	border-right: 1px solid black;
+	border-bottom: 0px none;
+	margin-top: 2px;
+	margin-left: 2px;
+	margin-right: 2px;
+	margin-bottom: 1px;
+	padding-top: 1px;
+	padding-left: 1px;
+	padding-right: 1px;
+	padding-bottom: 0px;
+}
+
+div.tab.sel {
+	font-weight: bold;
+	border-top: 1px solid black;
+	border-left: 1px solid black;
+	border-right: 1px solid black;
+	margin: 0px;
+	padding-top: 3px;
+	padding-left: 3px;
+	padding-right: 3px;
+	padding-bottom: 1px;
+}
+
+table.tab {
+	padding: 0px;
+	background-color: white;
+	border: 0px none;
+	border-collapse: collapse;
+	margin: 0px;
+	width: 100%;
+	font-size: 10pt;
+}
+
+table.tab tbody tr td {
+	padding: 0px;
+	margin: 0px;
+	border: 0px none;
+	border-bottom: 1px solid lightgrey;
+}
+
+table.tab tbody tr td.fill {
+	background-color: transparent;
+	width: 90%;
+}
+
+table.tab tbody tr.bottom {
+	background-color: lightgrey;
+	height: 2px;
+}
+
+.cLinkHover {
+	TEXT-DECORATION: underline;
+	CURSOR: pointer;
+	COLOR: white;
+	FONT-WEIGHT: bold;
+}
+
+.cSmallLabel {
+	Color: BLACK;
+	FONT-SIZE: xx-small;
+	FONT-FAMILY: "Times New Roman";;
+	font-weight: bold;
+	font-style: normal;
+}
+
+.cLinkNormal {
+	TEXT-DECORATION: none;
+	CURSOR: default;
+	color: #5249ff;
+	FONT-WEIGHT: bold;
+}
+
+.cNoErrors {
+	color: #00FF00;
+	FONT-WEIGHT: bold;
+	FONT-SIZE: 8pt;
+	BACKGROUND-COLOR: #FFFFFF;
+}
+
+.cGridG {
+	FONT-SIZE: 8pt;
+	FONT-FAMILY: MS Sans Serif, Courier, Arial;
+	BACKGROUND-COLOR: #E6E6E6;
+	border-collapse: collapse;;
+	border-left-color: black;
+	border-top-color: black;
+	border-width: 1px;
+	border-bottom-color: black;
+	border-right-color: black;
+	border-style: solid;
+	text-align: center
+}
+
+.cGridGHdr,table.cGridG tr th {
+	BACKGROUND-COLOR: #84804B;
+	COLOR: white;
+	TEXT-DECORATION: none;
+	FONT-WEIGHT: bold;;
+	text-align: center;
+	BORDER: #000099 1px solid;
+}
+
+.cGridGHdr,table.cGridG thead tr {
+	BACKGROUND-COLOR: #84804B;
+	COLOR: white;
+	TEXT-DECORATION: none;
+	FONT-WEIGHT: bold;;
+	text-align: center;
+	BORDER: #000099 1px solid;
+}
+
+.cGridGRowEven,table.cGridG tbody tr {
+	BACKGROUND-COLOR: gainsboro;
+	TEXT-DECORATION: none;
+	cursor: default;
+}
+
+tr.cGridGRowEven td,table.cGridG tbody tr td {
+	BORDER-LEFT: #000099 1px solid;
+	BORDER-RIGHT: #000099 1px solid;
+	BORDER-TOP: none;
+	BORDER-BOTTOM: ne;
+}
+
+.cGridGRowOdd,table.cGridG tbody tr.cGridGRowOdd {
+	BACKGROUND-COLOR: lightyellow;
+	TEXT-DECORATION: none;
+	cursor: default;
+}
+
+tr.cGridGRowOdd td,table.cGridG tbody tr.cGridGRowOdd td {
+	BORDER-LEFT: #000099 1px solid;
+	BORDER-RIGHT: #000099 1px solid;
+	BORDER-TOP: none;
+	BORDER-BOTTOM: none;
+}
+
+.cErrors {
+	color: #882345;
+	FONT-WEIGHT: bold;
+	FONT-SIZE: 8pt;
+	BACKGROUND-COLOR: #FFFFFF;
+}
+
+.cNoErrors {
+	color: # #00FF00;
+	FONT-WEIGHT: bold;
+	FONT-SIZE: 8pt;
+	BACKGROUND-COLOR: #FFFFFF;
+}
+
+input.btn {
+	color: #050;
+	font: bold 90% 'trebuchet ms', helvetica, sans-serif;
+	background-color: #fed;
+	border: 1px solid;
+	border-color: #696 #363 #363 #696;
+	filter: progid : DXImageTransform.Microsoft.Gradient ( GradientType = 0,
+		StartColorStr = '#ffffffff', EndColorStr = '#ffeeddaa' );
+}
+
+.itemGrid td {
+	border: 1px solid #DCDCDE;
+	padding: 5px 3px;
+}
+
+.itemGrid tr.gridhead td {
+	background: #F3F3F3;
+	font-weight: bold;
+	text-align: center;
+}
+
+.itemGrid {
+	border-collapse: collapse;
+}

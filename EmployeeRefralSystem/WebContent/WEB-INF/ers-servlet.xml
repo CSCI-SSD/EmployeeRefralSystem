@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	   xmlns:dwr="http://www.directwebremoting.org/schema/spring-dwr"
+	   xmlns:jee="http://www.springframework.org/schema/jee"
+	   xsi:schemaLocation="http://www.springframework.org/schema/beans  
+  						   http://www.springframework.org/schema/beans/spring-beans.xsd  
+						   http://www.directwebremoting.org/schema/spring-dwr 
+						   http://www.directwebremoting.org/schema/spring-dwr-2.0.xsd  
+						   http://www.springframework.org/schema/jee 
+						   http://www.springframework.org/schema/jee/spring-jee.xsd">
+						   
+	<!-- <jee:jndi-lookup id="cduDataSource" jndi-name="jdbc/cduData" resource-ref="true" />
+	<jee:jndi-lookup id="temqDataSource" jndi-name="jdbc/temqData" resource-ref="true" />
+	<jee:jndi-lookup id="billingDataSource" jndi-name="jdbc/billingdb" resource-ref="true" />
+	
+	<bean id="service" class="com.br.sms.service.ServiceImpl">
+		<property name="dataSource" ref="cduDataSource" />
+		<property name="temqDataSource" ref="temqDataSource" />
+		<property name="billingDataSource" ref="billingDataSource" />
+	</bean>
+	
+	<bean id="monitorController"	class="com.br.sms.controller.MonitorController">
+		<property name="service" ref="service" />
+		<dwr:remote javascript="monitordwr">
+			<dwr:include method="updateFileStatus"/>
+			<dwr:include method="updateLateFlagFileStatus"/>
+		</dwr:remote>
+	</bean>
+	
+	<bean id="configurationController"	class="com.br.sms.controller.ConfigurationController">
+		<property name="service" ref="service" />
+		<dwr:remote javascript="configurationdwr">
+			<dwr:include method="saveFile"/>
+			<dwr:include method="getFileTypes"/>
+			<dwr:include method="getFileFormats"/>
+			<dwr:include method="searchFiles"/>
+			<dwr:include method="getSelectedFileDetails"/>
+			<dwr:include method="getSelectedFileContactDetails"/>
+			<dwr:include method="deleteFile" />
+		</dwr:remote>
+	</bean>
+	
+	<bean id="historicStaticController"	class="com.br.sms.controller.HistoricStatisticsController">
+		<property name="service" ref="service" />
+		<dwr:remote javascript="historicStaticControllerdwr">
+			<dwr:include method="getFileStatistics"/>
+			<dwr:include method="getFileStatisticsCount"/>
+		</dwr:remote>
+	</bean>
+	
+	<bean id="correspondentsController"	class="com.br.sms.controller.CorrespondentsController">
+		<property name="service" ref="service" />
+		<dwr:remote javascript="correspondentsControllerdwr">
+			<dwr:include method="getCorrespondents"/>			
+		</dwr:remote>
+	</bean>
+
+	<bean id="mqRejectsController"	class="com.br.sms.controller.MQRejectsController">
+		<property name="service" ref="service" />
+		<dwr:remote javascript="mqRejectsControllerdwr">
+			<dwr:include method="getMQRejects"/>
+		</dwr:remote>
+	</bean>
+	
+	<bean id="tradeInquiryController"	class="com.br.sms.controller.TradeInquiryController">
+		<property name="service" ref="service" />
+		<dwr:remote javascript="tradeInquiryControllerdwr">
+			<dwr:include method="getTradeInquiryList"/>
+		</dwr:remote>
+	</bean>
+	
+	<dwr:controller id="dwrController" debug="false" />
+	<dwr:configuration>
+		<dwr:convert type="bean" class="com.br.sms.beans.FileBean" />
+		<dwr:convert type="bean" class="com.br.sms.beans.ContactsBean" />
+		<dwr:convert type="bean" class="com.br.sms.beans.DropDownBean" />
+		<dwr:convert type="bean" class="com.br.sms.beans.TradeBean" />
+		<dwr:convert type="bean" class="com.br.sms.beans.HistoricStatisticsBean" />
+		<dwr:convert type="exception" class="com.br.sms.exceptions.SMSException" />
+		<dwr:convert type="bean" class="com.br.sms.beans.CorrespondentsBean" />
+	</dwr:configuration>
+
+	<bean	class="org.springframework.web.servlet.handler.SimpleUrlHandlerMapping">
+		<property name="mappings">
+			<value>
+			    /monitor.view=monitorController
+			    /configuration.view=configurationController
+			    /historicStatic.view=historicStaticController
+			    /mqRejects.view=mqRejectsController
+			    /tradeInquiry.view=tradeInquiryController
+			    /correspondents.view=correspondentsController
+			</value>
+		</property>
+	</bean>
+	
+	<bean id="messageSource"   class="org.springframework.context.support.ResourceBundleMessageSource">   
+    	<property name="basename" value="com/br/sms/resource/ApplicationResource"/>   
+    </bean> -->
+    
+    <bean id="messageSource"   class="org.springframework.context.support.ResourceBundleMessageSource">   
+    	<property name="basename" value="com/system/resource/ApplicationResource"/>   
+    </bean>
+    
+    
+    <bean id="dataSourceDB" class="oracle.jdbc.pool.OracleDataSource" destroy-method="close"> 
+        <property name="URL" value="jdbc:oracle:thin:@localhost:1521:xe" /> 
+        <property name="user" value="ers"/> 
+        <property name="password" value="ers"/> 
+    </bean>
+    
+    <bean id="service" class="com.system.service.ServiceImpl">
+		<property name="dataSource" ref="dataSourceDB" />
+	</bean>
+    
+    <bean id="loginController"	class="com.system.controllers.LoginController">
+    	<property name="service" ref="service" />
+	</bean>
+	
+	 <bean id="logoutController"	class="com.system.controllers.LogoutController">
+    	<property name="service" ref="service" />
+	</bean>
+	
+	<bean id="viewsatusController"	class="com.system.controllers.ViewStatusController">
+    	<property name="service" ref="service" />
+	</bean>
+	
+	<bean id="mainPageController"	class="com.system.controllers.MainPageController">
+    	<property name="service" ref="service" />
+    	
+	</bean>
+        
+    
+    <bean id="createRequestControll"	class="com.system.controllers.CreateRequestController">
+    	<property name="service" ref="service" />
+	</bean>
+	
+	<bean id="deleteRequestController"	class="com.system.controllers.DeleteRequestController">
+    	<property name="service" ref="service" />
+	</bean>
+    
+    <bean	class="org.springframework.web.servlet.handler.SimpleUrlHandlerMapping">
+		<property name="mappings">
+			<value>
+			    /login.view=loginController
+			    /logout.view=logoutController
+			    /status.view=viewsatusController
+			    /mainpage.view=mainPageController
+			    /createrequest.view=createRequestControll
+			    /deleterequest.view=deleteRequestController
+			</value>
+		</property>
+	</bean>
+	
+	
+	<dwr:controller id="dwrController" debug="true" />
+	<dwr:configuration>
+		
+	</dwr:configuration>
+	
+	<bean id="jspViewResolver"  class="org.springframework.web.servlet.view.InternalResourceViewResolver">
+		<property name="viewClass" 	value="org.springframework.web.servlet.view.JstlView" />
+		<property name="prefix" value="" />
+		<property name="suffix" value=".jsp" />
+	</bean>
+
+</beans>

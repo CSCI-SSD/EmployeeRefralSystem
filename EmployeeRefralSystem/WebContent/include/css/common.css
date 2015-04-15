@@ -1,0 +1,367 @@
+body
+{
+    font-size: 12px !important;
+}
+body, html, form
+{
+    height: auto;
+    min-height: auto;
+    margin: auto;;
+	width: auto
+}
+.ui-tabs-100-percent-height
+{
+    height: 98%;
+    width: 100%;
+}
+table td
+{
+    vertical-align: middle;
+}
+td.labelCell
+{
+    text-align: right;
+    width: 200px;
+}
+div.errorIcon
+{
+    border: none !important;
+    background: none !important;
+    visibility: hidden;
+}
+
+.ui-autocomplete
+{
+    padding: 0 !important;
+    background: none !important;
+    background-color: #fff !important;
+}
+.ui-autocomplete .ui-menu-item,
+.ui-autocomplete .ui-menu-item a
+{
+    margin: 0 !important;
+    padding: 0 !important;
+    border: none !important;
+    font: 11px arial,sans-serif !important;
+}
+.ui-autocomplete .ui-menu-item a.ui-state-hover
+{
+    background: none !important;
+    background-color: #0A246A !important;
+}
+
+input[type="text"].focus, textarea.focus
+{
+    background-color: #FFFFBB;
+}
+input[type="text"].error, textarea.error, select.error
+{
+    background-color: #F89B78;
+}
+
+.messageSection
+{
+    margin: 5px 0 0 0;
+}
+
+.label
+{
+    white-space: nowrap;
+    margin-right: 3px;
+}
+
+.floatLeft
+{
+    float: left;
+}
+
+.floatRight
+{
+    float: right;
+}
+
+.ui-icon-blank
+{
+    display: block;
+    text-indent: -99999px;
+    overflow: hidden;
+    width: 16px;
+    height: 16px;
+}
+
+.ui-widget-header .ui-icon-blank, .ui-widget-header .ui-icon
+{
+    float: left;
+    margin-right: 5px;
+}
+
+input[type="radio"], input[type="checkbox"]
+{
+    height: 1em;
+    width: 16px;
+    vertical-align: text-bottom;
+    border: none;
+}
+
+.ui-toggleBar .ui-widget-header, .toggleBar
+{
+    cursor: pointer;
+}
+
+a.ui-button-icon
+{
+    display: inline-block;
+}
+
+.topInfoBar .ui-state-highlight
+{
+    padding: 1px;
+}
+
+.topInfoBar .topInfoItem
+{
+    float: left;
+    white-space: nowrap;
+}
+
+.topInfoBar .topInfoItem .data
+{
+    font-weight: bold;
+    margin-right: 20px;
+    white-space: nowrap;
+}
+
+/* ====== START - RadGrid styles ====== */
+.dataGrid td, .dataGrid th, .RadGrid td, .RadGrid th
+{
+    height: auto !important;
+    padding: 0.1em 0.3em !important;
+    border: 1px solid transparent !important;
+}
+
+.rgFilterRow table td,
+.rgFilterRow table th
+{
+    padding: 0 !important;
+    border: none !important;
+}
+
+.dataGrid th, .RadGrid th
+{
+    text-align: center !important;
+}
+
+.dataGrid th
+{
+    text-decoration: none !important;
+}
+.RadGrid .rgHeaderDiv
+{
+    background-image: none !important;
+}
+.RadGrid_Default .rgFilterRow .rgFilterBox
+{
+    padding: 0;
+}
+/* ====== END - RadGrid styles ====== */
+
+/* ====== START - jQuery Theme ovewrite ====== */
+.uiSection
+{
+    margin: 0 3px 10px 1px;
+}
+.ui-widget-header
+{
+    padding: 0.2em;
+}
+.ui-widget-header.mainHeader
+{
+    padding: 0.5em;
+}
+
+.ui-widget-content
+{
+    padding: 0.2em;
+}
+
+.ui-button
+{
+    /*min-width: 80px;     text-align: center;     align: center;*/
+}
+.ui-tabs .ui-tabs-panel
+{
+    padding: 0.5em 0.2em;
+}
+
+
+.ui-tabs .ui-tabs-nav li a
+{
+    padding: 1px 5px !important;
+}
+
+/* Not sure why but ui-button relative is messed up in ACATS createcase */
+.ui-button, .ui-button-text
+{
+    position: static !important;
+    font-size: 1em;
+    font-weight: normal !important;
+    padding-top: 0 !important;
+    padding-bottom: 0 !important;
+    cursor: pointer;
+}
+/* ====== END - jQuery Theme ovewrite ====== */
+div.ui-inputTextContainer
+{
+    margin: 5px;
+}
+
+div.ui-inputTextContainer .ui-label
+{
+    width: 200px;
+    display: block;
+    float: left;
+    margin: 2px 5px 0 0;
+    text-align: right;
+    padding: 0;
+}
+
+div.ui-inputTextContainer label
+{
+    padding-top: 2px;
+}
+
+.ui-reqFieldIndicator
+{
+    color: #FF8000;
+    vertical-align: middle;
+    font-weight: bold;
+}
+
+div.ui-inputTextContainer input, div.ui-inputTextContainer textarea, div.ui-inputTextContainer select, div.ui-inputTextContainer .ui-inputGroup
+{
+    float: left;
+}
+
+div.ui-inputTextContainer .ui-inputGroup label, div.ui-inputTextContainer .ui-inputGroup input
+{
+    float: none;
+}
+
+div.ui-inputTextContainer .ui-state-error
+{
+    margin-top: 2px;
+    float: left;
+    border: none !important;
+    background: none !important;
+    visibility: hidden;
+}
+.ui-icon-wo-bg-bd
+{
+    background: none !important;
+    border: none !important;
+}
+.watermark
+{
+    color: #999;
+}
+#tooltip
+{
+    position: absolute;
+    z-index: 3000;
+    border: 1px solid #111;
+    background-color: #eee;
+    padding: 2px;
+    opacity: 0.85;
+}
+#tooltip h3, #tooltip div
+{
+    margin: 0;
+}
+.ui-datepicker-trigger
+{
+    cursor: pointer;
+}
+
+/* ========== SELECT BOX - TODO - SPLIT THEMEABLE STUFF TO THEME FOLDERS ======= */
+div.selectbox-wrapper
+{
+    position: absolute;
+    width: 400px;
+    background-color: white;
+    border: 1px solid #ccc;
+    margin: 0px;
+    margin-top: -10px;
+    padding: 0px;
+    text-align: left;
+    height: 150px;
+    *height:150px;/*IE6 fix */
+    overflow:auto;
+}
+div.selectbox-wrapper ul
+{
+    list-style-type: none;
+    margin: 0px;
+    padding: 0px;
+}
+div.selectbox-wrapper ul li.selected
+{
+    background-color: #EAF2FB;
+}
+div.selectbox-wrapper ul li.current
+{
+    background-color: #CDD8E4;
+}
+div.selectbox-wrapper ul li
+{
+    list-style-type: none;
+    display: block;
+    margin: 0;
+    padding: 2px;
+    cursor: pointer;
+}
+.selectbox
+{
+    margin: 0px 5px 10px 0px;
+    padding-left: 2px;
+    width: 10em;
+    display: block;
+    text-align: left;
+    background: url('images/bg_select_blue.png') right; /*height:18px;*/
+    cursor: pointer;
+    border: 1px solid #D1E4F6;
+    color: #333;
+}
+
+/** Added by Prasad*/
+.cMyTable{
+	BACKGROUND-COLOR: white;
+    FONT-SIZE: 8pt;
+    FONT-FAMILY: MS Sans Serif,Courier,Arial;
+
+ 	BORDER-LEFT: #000099 1px solid;
+    BORDER-RIGHT: #000099 1px solid;
+    BORDER-TOP:  #000099 1px solid;
+    BORDER-BOTTOM:  #000099 1px solid;
+ }
+ 
+  table.sortable tr.odd td {
+	background-color: #EFEFEF;
+}
+table.sortable tr.even td {
+	background-color: #FFFFFF;
+}
+
+pointer {
+	cursor: pointer; 
+	cursor: hand; 
+}
+
+
+#footer {
+	height:30px;
+	position:absolute;
+	bottom:0;
+	text-align: center;
+}
+ 
+/* ========== SELECT BOX - TODO - SPLIT THEMEABLE STUFF TO THEME FOLDERS ======= */

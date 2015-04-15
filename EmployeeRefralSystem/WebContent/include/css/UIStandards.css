@@ -1,0 +1,52 @@
+﻿.mainHeader
+{
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 1.5em;
+    cursor: default;
+}
+.mainHeader span
+{
+    float: left;
+    margin-left: 20px;
+}
+.ui-widget
+{
+    margin-bottom: 5px;
+}
+
+li>ul
+{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+#tooltip h3
+{
+    font-size: 1em;
+    font-weight: normal;
+}
+table.changeLogTable
+{
+    border-collapse: collapse;
+    margin-left: 20px;
+}
+table.changeLogTable, table.changeLogTable td, table.changeLogTable th
+{
+    border: 1px solid black;
+}
+table.changeLogTable ul
+{
+    padding-left: 1em;
+}
+table.fieldAlignments,
+table.fieldAlignments td,
+table.fieldAlignments th
+{
+    border-collapse: collapse;
+    border: 1px solid black;
+}
+.themesDdl
+{
+    font-size: 10px !important;
+    float: right;
+}

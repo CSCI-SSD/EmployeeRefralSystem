@@ -1,0 +1,57 @@
+/* Same as .ui-widget-header */
+.dataGrid th,
+.RadGrid th.rgHeader
+{
+    border-color: #a6c9e2;
+    background: #71a8d1 url(images/ui-bg_gloss-wave_80_71a8d1_500x100.png) 50% 50% repeat-x;
+    color: #00158e;
+    font-weight: bold;
+}
+
+/* Same color as div.RadGrid th.rgHeader */
+.dataGrid th,
+.RadGrid th.rgHeader,
+.RadGrid th.rgHeader a,
+.RadGrid th.rgHeader label
+{
+    color: #00158e;
+}
+
+/* Same background as 
+    .ui-state-hover, .ui-widget-content .ui-state-hover, .ui-widget-header .ui-state-hover, .ui-state-focus, .ui-widget-content .ui-state-focus, .ui-widget-header .ui-state-focus
+*/
+div.RadGrid th.rgSorted
+{
+    background: #d0e5f5 url(images/ui-bg_glass_80_d0e5f5_1x400.png) 50% 50% repeat-x;
+}
+
+/* Same as .ui-widget */
+/* Same as .ui-widget */
+html, body, form, label, input, textarea, fieldset, legend, select, button, table, td, div, span, label
+{
+    font-family: Trebuchet MS !important;
+}
+
+.RadGrid_Default,
+.RadGrid_Default .rgMasterTable,
+.RadGrid_Default .rgDetailTable,
+.RadGrid_Default .rgGroupPanel table,
+.RadGrid_Default .rgCommandRow table,
+.RadGrid_Default .rgEditForm table,
+.RadGrid_Default .rgPager table,
+.GridToolTip_Default 
+{
+    font: 1em "Trebuchet MS","Lucida Sans",Arial,sans-serif !important;
+}
+
+/* Same color as .ui-widget-color
+   For some reason the color is not getting triggered down to the span holding text in header.
+   Will not need this once the issue is fixed */
+.ui-widget-header span,
+.ui-widget-header span span,
+.ui-widget-header  label,
+.ui-widget-header  table tr td
+{
+    color: #00158e; 
+}
+
