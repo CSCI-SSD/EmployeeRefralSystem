@@ -1,4 +1,4 @@
-<%@ taglib uri="http://java.sun.com/jstl/core" prefix="c" %>
+<%@ taglib prefix = "c" uri = "http://java.sun.com/jsp/jstl/core" %>
 <%@ taglib uri="http://www.springframework.org/tags" prefix="spring" %>
 <html>
 	<head>
@@ -65,8 +65,17 @@
 		
 	</head>
 	<body>
-		<br>
 		<center>
+			<table width="100%" class="ui-widget-content" border="0" >
+				<tr>
+					<td>
+					<div class=""   align="center" height="63px"> 
+						<img alt="Header" src=<c:out value='${pageContext.request.contextPath}'/>/imgs/ersheader3.jpg width="578px" px height="63px" align=center />
+					</div>
+					</td>
+				</tr>
+			</table>
+			<br>
 			<table width="50%" class="ui-widget-content" border="0">
 				<tr>
 					<td>
